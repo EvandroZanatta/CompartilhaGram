@@ -35,6 +35,6 @@ $(document).ready(function(){
        alert('mudou');
     });*/
     
-    
+    //var first = getUrlVars()["me"];
    
 });
