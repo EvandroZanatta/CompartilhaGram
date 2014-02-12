@@ -1,13 +1,17 @@
 $(document).ready(function(){
        
-    var first = getUrlVars()["token"];
-    alert(first);
+    
 
     $("#spl_entrar").click(function() {
                 
+        var token_url = getUrlVars()["token"];
+        if(token_url != null){
+            $("body").data("token", token);
+            $.mobile.navigate( "#page", { transition : "slide"} );
+        }
+                
+        //url da API do Instagram
         url = "https://api.instagram.com/oauth/authorize/?client_id=290eaa1efc0e4d658f71a35389e8f6b1&redirect_uri=http://" + window.location.host + window.location.pathname + "&response_type=code";
-        
-        //$("body").data("token", 52);
         
         //Pega o valor do token
         token = $("body").data("token");
@@ -30,6 +34,6 @@ $(document).ready(function(){
        alert('mudou');
     });*/
     
-    
+    //$("body").data("token", 52);
    
 });
