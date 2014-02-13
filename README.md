@@ -15,12 +15,13 @@ App para suprir a falta de um cliente oficial do Instagram no Firefox OS.
 * JQuery
 * Jquery/Ajax
 * Jquery Mobile
+* LocalStorage
 
 # Requisitos Mínimos
 
-* JQuery 1.11.0
-* JQuery Mobile 1.4.0
-
+* JQuery 1.11.0(CDN externo)
+* JQuery Mobile 1.4.0(CDN externo)
+* jQuery.Storage.js+(Distribuido junto ao código)
 
 ***
 
