@@ -15,27 +15,36 @@
         <script src="js/storage.js"></script>
         
         <!-- Codigos desenvolvidos para o projeto -->
-        <script src="js/url_get.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/gera_conteudo.js"></script>
 </head>
 
 <body>
 
+       
     <!-- Inicio da primeira pagina -->
-    <div data-role="page" id="splash" >
+    <div data-role="page" id="index">
 
 	<div data-role="header" data-position="fixed">
-		<h1><img style="max-height: 30px;" src="images/instagram.png" /></h1>
+                <h1>CompartilhaGram</h1>
 	</div><!-- /header -->
 
-	<div role="main" class="ui-content">
-		<p>Cliente não oficial do Instagram para Firefox OS "On The Line".</p>
-                <input type="button" data-theme="b" value="Entrar" id="spl_entrar">
+	<div role="main" class="ui-content" id="index_imagens">
+                
+         
 	</div><!-- /content -->
         
-        <div data-role="footer" data-position="fixed">
-            <h4>Powered by Evandro Zanatta</h4>
+        <div data-role="footer" class="ui-body-a" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="bars" class="ui-btn-active"></a></li>
+                    <li><a href="#" data-icon="user" id="esp_breve"></a></li>
+                    <li><a href="#" data-icon="gear" id="esp_sair"></a></li>
+                </ul>
+            </div><!-- /navbar -->
         </div><!-- /footer -->
+       
+        </div><!-- /panel -->
+
     </div><!-- /page -->
     
 </body>
